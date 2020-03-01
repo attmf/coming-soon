@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Contato</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript">
+			$(window).scroll(function() {
+				if ($(this).scrollTop()>140)
+				{
+					$('.fixed-menu').fadeIn();
+				}
+				else
+				{
+					$('.fixed-menu').fadeOut();
+				}
+			});
+		</script>
+		<script language="JavaScript" >
+			function enviardados(){
+			 
+			if(document.dados.tx_nome.value=="" || document.dados.tx_nome.value.length < 8)
+			{
+			alert( "Preencha campo NOME corretamente!" );
+			document.dados.tx_nome.focus();
+			return false;
+			}
+			 
+			 
+			if( document.dados.tx_email.value=="" || document.dados.tx_email.value.indexOf('@')==-1 || document.dados.tx_email.value.indexOf('.')==-1 )
+			{
+			alert( "Preencha campo E-MAIL corretamente!" );
+			document.dados.tx_email.focus();
+			return false;
+			}
+			 
+			if (document.dados.tx_mensagem.value=="")
+			{
+			alert( "Preencha o campo MENSAGEM!" );
+			document.dados.tx_mensagem.focus();
+			return false;
+			}
+			 
+			if (document.dados.tx_mensagem.value.length < 50 )
+			{
+			alert( "É necessario preencher o campo MENSAGEM com mais de 50 caracteres!" );
+			document.dados.tx_mensagem.focus();
+			return false;
+			}
+			 
+			return true;
+			}
+			 
+		</script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="fixed-menu">
+				<div class="conteudo">
+					<div class="menu">
+						<a href="index.html"><img class="logo fix" src="images/logo.png"/></a>
+						<ul class="menu fix">
+							<li class="menu"><a class="menu" href="embreve.html">PROMOÇÕES</a></li>
+							<li class="menu"><a class="menu" href="moda.html">MODA GEEK</a>
+								<div class="sub-menu fix">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="camisetas.html">Camisetas</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="carteiras.html">Carteiras</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="brincos.html">Brincos</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="colares.html">Colares</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="#">Bonés</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Kigurumis</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Sandálias</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Bolsas e Mochilas</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="casa.html">CASA GEEK</a>
+								<div class="sub-menu fix">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="luminarias.html">Luminárias</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="canecas.html">Canecas</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="almofadas.html">Almofadas</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="#">Placas de Parede</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Aparador de Livros</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Porta-Chaves</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="colecionaveis.html">COLECIONÁVEIS</a>
+								<div class="sub-menu fix">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="harry.html">Harry Potter</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="toys.html">Toys</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Chaveiros</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Hand Spinner</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="outros.html">OUTROS</a>
+								<div class="sub-menu fix">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="mascaras.html">Máscaras de Dormir</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="mousepads.html">Mousepads</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Lixinhos para Carros</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+						<input class="search fix" type="text" name="search" placeholder="O que você procura?">
+					</div>
+				</div>
+			</div>
+			<div class="header-top">
+				<div class="conteudo">
+					<a href="index.html"><img class="logo" src="images/logo.png"></a>
+					<div class="nav-top">
+						<ul class="nav-top">
+							<li class="nav-top"><a class="nav-top" href="sobre.html">QUEM SOMOS</a></li>
+							<li class="nav-top"><a class="nav-top" href="help.html">DÚVIDAS</a></li>
+							<li class="nav-top"><a class="nav-top" href="contato.html">FALE CONOSCO</a></li>
+						</ul>
+							<form>
+								<input class="search" type="text" name="search" placeholder="Pesquisar por Harry Poter, Dragon Ball...">
+							</form>
+						<div class="info">
+							<ul class="info">
+								<li class="info first"><img class="info-icon" src="images/icons/pessoa.png">Olá Visitante</li>
+								<li class="info"><img class="info-icon" src="images/icons/cart.jpg"></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-nav">
+				<div class="conteudo">
+					<div class="menu">
+						<ul class="menu">
+							<li class="menu"><a class="menu" href="embreve.html">PROMOÇÕES</a></li>
+							<li class="menu"><a class="menu" href="moda.html">MODA GEEK</a>
+								<div class="sub-menu">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="camisetas.html">Camisetas</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="carteiras.html">Carteiras</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="brincos.html">Brincos</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="colares.html">Colares</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="#">Kigurumis</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Sandálias</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Bonés</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Bolsas e Mochilas</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="casa.html">CASA GEEK</a>
+								<div class="sub-menu">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="luminarias.html">Luminárias</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="canecas.html">Canecas</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="almofadas.html">Almofadas</a></li>	
+										<li class="sub-menu"><a class="sub-menu" href="#">Placas de Parede</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Aparador de Livros</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Porta-Chaves</a></li>	
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="colecionaveis.html">COLECIONÁVEIS</a>
+								<div class="sub-menu">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="harry.html">Harry Potter</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="toys.html">Toys</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Chaveiros</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Hand Spinner</a></li>
+									</ul>
+								</div>
+							</li>
+							<li class="menu"><a class="menu" href="outros.html">OUTROS</a>
+								<div class="sub-menu">
+									<ul class="sub-menu">
+										<li class="sub-menu"><a class="sub-menu" href="mascaras.html">Máscaras de Dormir</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="mousepads.html">Mousepads</a></li>
+										<li class="sub-menu"><a class="sub-menu" href="#">Lixinhos para Carros</a></li>
+									</ul>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<section class="institucional">
+			<div class="clearfix">
+					<ul class="breadcrumb">
+						<li class="breadcrumb"><a class="breadcrumb" href="index.html">Início</a></li>
+						<li class="breadcrumb">/</li>
+						<li class="breadcrumb">Contato</li>
+					</ul>
+				<aside class="menu-lateral">
+					<ul class="menu-lateral">
+						<h3 class="title">Serviços ao Cliente</h3>
+						<li class="menu-lateral"><a class="menu-lateral" href="contato.html">Entre em Contato</a></li>
+						<li class="menu-lateral"><a class="menu-lateral" href="troca.html">Solicitar Troca</a></li>
+						<li class="menu-lateral"><a class="menu-lateral" href="troca.html">Solicitar Devolução</a></li>
+					</ul>
+				</aside>
+				<div class="about">
+					<h2 class="title">Entre em Contato</h1>
+					<form action="pagina de ação" method="post" name="dados" onSubmit="return enviardados();" >
+						<table width="588" border="0" align="center" >
+							<tr>
+								<td width="118"><font size="1" face="Verdana, Arial, Helvetica, sans-serif">Nome completo:</font></td>
+								<td width="460">
+								<input name="tx_nome" type="text" class="formbutton" id="tx_nome" size="52" maxlength="150">
+								</td>
+							</tr>
+							<tr>
+								<td><font size="1" face="Verdana, Arial, Helvetica, sans-serif">E-mail:</font></td>
+								<td><font size="2">
+								<input name="tx_email" type="text" id="tx_email" size="52" maxlength="150" class="formbutton">
+							  </font></td>
+							</tr>
+							<tr>
+								<td><font face="Verdana, Arial, Helvetica, sans-serif"><font size="1">Mensagem<strong>:</strong></font></font></td>
+								<td rowspan="2"><font size="2">
+								<textarea name="tx_mensagem" cols="50" rows="8" class="formbutton" id="tx_mensagem" input ></textarea>
+								</font></td>
+							</tr>
+							<tr>
+								<td height="85"><p><strong><font face="Verdana, Arial, Helvetica, sans-serif"><font size="1">
+								</font></font></strong></p></td>
+							</tr>
+							<tr>
+								<td height="22"></td>
+								<td>
+								<input name="Submit" type="submit"  class="formobjects" value="Enviar dados">
+								<input name="Reset" type="reset" class="formobjects" value="Redefinir">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</div>
+			</div>
+		</section>
+		<div class="footer">
+			<div class="footer-first">
+				<div class="conteudo">
+					<ul>
+					<li><h1 class="title2">INSTITUCIONAL</h1></li>
+						<li><a href="sobre.html">Sobre nós</a></li>
+						<li><a href="politica.html">Política de Privacidade</a></li>
+						<li><a href="termos.html">Termos e Condições</a></li>
+						<li><a href="envio.html">Informações de Envio</a></li>
+					</ul>
+					<ul>
+					<li><h1 class="title2">SERVIÇOS AO CLIENTE</h1></li>
+						<li><a href="contato.html">Entre em Contato</a></li>
+						<li><a href="troca.html">Solicitar Devolução</a></li>
+						<li><a href="troca.html">Solicitar Troca</a></li>
+					</ul>
+					<ul>
+					<li><h1 class="title2">REDES SOCIAIS</h1></li>
+						<li><a href="#">EM BREVE</a></li>
+					</ul>
+					<ul>
+					<li><h1 class="title2">MINHA CONTA</h1></li>
+						<li><a href="#">EM BREVE</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer-second">
+				<div class="conteudo">
+					Powered by: Anderson Trimont Maronato Filho 1°INFO
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
