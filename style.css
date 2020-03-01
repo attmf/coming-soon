@@ -338,7 +338,7 @@
 			aside.menu-lateral {
 				background: #fff;
 				width: 20%;
-				margin-top: 3%;
+				margin-top: 1%;
 				padding: 1%;
 				display: table-cell;
 				float: left;
@@ -394,7 +394,7 @@
 			}
 			div.catalogo {
 				background: #fff;
-				margin-top: 5%;
+				margin-top: 1%;
 				display: table;
 			}
 			ul.produtos.catalogo {
@@ -511,13 +511,14 @@
 				border-bottom: 1px solid;
 			}
 			h3.title {
-				font-family: Sans Pro SemiBold;
+				font-family: Sans Pro Bold;
 				font-size: 1em;
 				padding: 4px;
 			}
 			h2.title {
-				font-family: Sans Pro SemiBold;
+				font-family: Sans Pro Bold;
 				font-size: 2em;
+				margin-top: 2%;
 			}
 			h1.subtitle {
 				font-family: Sans Pro Light;
@@ -533,7 +534,7 @@
 			}
 			div.ordem {
 				float: right;
-				margin-top: 3%;
+				margin-top: 4%;
 			}
 			ul.paginas {
 				list-style: none;
